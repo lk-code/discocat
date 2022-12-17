@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  discocat:
+    image: ${DOCKER_REGISTRY-}discocat
+    build:
+      context: .
+      dockerfile: discocat/Dockerfile
